@@ -16,21 +16,22 @@
                 <img src="assets/img/doc_half.png" alt="doc" style="display: block; width: 100%; height: auto;">
             </div>
             <section class="bank_name">
-                <p>NAME</p>
+                <p>MediNexus</p>
             </section>
-            <section class="dashbord"><a href=""> About</a> | <a href="">Services</a>| <a href="">Doctors</a> | <a
-                    href="">Contact</a></section>
+            <section class="dashbord dashboard"><a href="#about-medinexus"> About</a> | <a
+                    href="#services">Services</a>| <a href="#doctors">Doctors</a> | <a href="#contact">Contact</a>
             </section>
         </header>
 
         <div class="scroll-stage" id="scrollStage">
             <div class="container clay-card" id="heroPin">
-                <section class="content_div about-section">
-                    <h1 style="margin-left: 6px;">Welcome to XYZ Hospital</h1>
+                <section class="content_div about-section" id="welcome">
+                    <h1 style="margin-left: 6px;">Welcome to MediNexus Hospital</h1>
                     <div class="about content_div">
-                        <p>We are committed to providing the best healthcare services to our patients. Our team of
-                            experienced doctors and staff are here to ensure your well-being.</p>
-                        <div class="connected-containers" style="display: flex; align-items: stretch; gap: 1rem;">
+                        <p><b>MediNexushospital is one of the leading healthcare providers in the region, committed to
+                                delivering comprehensive medical services with compassion and excellence.</b></p>
+                        <div class="connected-containers"
+                            style="display: flex; align-items: stretch; gap: 1rem; margin-bottom: 28px;">
                             <div class="connected-container">
                                 <div
                                     style="display: flex; align-items: center; justify-content: flex-start; gap: 0.25rem;">
@@ -64,23 +65,43 @@
                         </div>
                     </div>
                 </section>
-                <section style="margin: 10px 8px;" class="content_div doctor-showcase services-section">
-                    <div class="chat-bubble chat-bubble--left chat-bubble--upper chat-bubble--behind"
-                        aria-hidden="true">hello</div>
+                <section style="margin: 80px 8px 30px 8px; padding-top: 20px;"
+                    class="content_div doctor-showcase services-section">
+                    <div class="chat-bubble chat-bubble--left chat-bubble--upper chat-bubble--behind" aria-hidden="true"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; padding: 6px;">
+                        <img src="assets/img/moduleimages/bloodbank.png" alt="Blood Bank"
+                            style="height: 52%; width: auto; max-width: 100%; object-fit: contain;">
+                        <strong style="font-size: 0.74rem; font-weight: 900; line-height: 1.1;">Blood Bank</strong>
+                    </div>
                     <div class="chat-bubble chat-bubble--left chat-bubble--lower chat-bubble--inverted"
-                        aria-hidden="true">world</div>
+                        aria-hidden="true"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; padding: 6px;">
+                        <img src="assets/img/moduleimages/organ.png" alt="Organ Donation"
+                            style="height: 52%; width: auto; max-width: 100%; object-fit: contain;">
+                        <strong style="font-size: 0.74rem; font-weight: 900; line-height: 1.1;">Organ Donation</strong>
+                    </div>
                     <div class="chat-bubble chat-bubble--right chat-bubble--upper chat-bubble--inverted"
-                        aria-hidden="true">i am</div>
+                        aria-hidden="true"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; padding: 6px;">
+                        <img src="assets/img/moduleimages/vaccineimage.png" alt="Vaccine Hub"
+                            style="height: 52%; width: auto; max-width: 100%; object-fit: contain;">
+                        <strong style="font-size: 0.74rem; font-weight: 900; line-height: 1.1;">Vaccine Hub</strong>
+                    </div>
                     <div class="chat-bubble chat-bubble--right chat-bubble--lower chat-bubble--behind"
-                        aria-hidden="true"> aayush</div>
-                    <div class="services">
+                        aria-hidden="true"
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; padding: 6px;">
+                        <img src="assets/img/moduleimages/transport.png" alt="Transport"
+                            style="height: 52%; width: auto; max-width: 100%; object-fit: contain;">
+                        <strong style="font-size: 0.74rem; font-weight: 900; line-height: 1.1;">Transport</strong>
+                    </div>
+                    <div class="services" id="services">
                         <div class="pill">
                             <img src="assets/img/doc_full.png" alt="Male doctor" class="doc_male" id="maleDoctor">
                         </div>
                     </div>
                 </section>
                 <section class="content_div doctors-section">
-                    <div class="doctors">
+                    <div class="doctors" id="doctors">
                         <h2 class="doctors-title">Our doctors</h2>
                         <div class="doctor_card">
                             <div class="doctor-image-frame">
@@ -124,17 +145,109 @@
                         </div>
                     </div>
                 </section>
-                <section class="content_div">
-                    <div class="contact">
-
-                    </div>
-                </section>
-
                 <canvas id="docCanvas" class="doc-canvas" role="img"
                     aria-label="Animated illustration of a doctor, playing as you scroll"></canvas>
+                    <br>
+                     <!-- Separate Last Container -->
+        <div class="last-container" id="about-medinexus">
+
+                <!-- Footer link columns -->
+                <div class="footer-columns">
+
+                    <!-- Col 1: Brand -->
+                    <div class="footer-col" id="about">
+                        <p class="footer-col-title">MediNexus</p>
+                        <a href="#welcome" class="footer-col-link">About</a>
+                        <a href="#" class="footer-col-link">Blog</a>
+                        <a href="#" class="footer-col-link">Careers</a>
+                        <a href="#" class="footer-col-link">Press</a>
+                    </div>
+
+                    <!-- Col 2: For Patients -->
+                    <div class="footer-col">
+                        <p class="footer-col-title">For Patients</p>
+                        <a href="#doctors" class="footer-col-link">Search for Doctors</a>
+                        <a href="#" class="footer-col-link">Search for Clinics</a>
+                        <a href="#" class="footer-col-link">Search for Hospitals</a>
+                        <a href="#" class="footer-col-link">Read about Medicines</a>
+                        <a href="#" class="footer-col-link">Health App</a>
+                        <a href="#" class="footer-col-link">MediNexus Plus</a>
+                    </div>
+
+                    <!-- Col 3: For Doctors -->
+                    <div class="footer-col">
+                        <p class="footer-col-title">For Doctors</p>
+                        <a href="#" class="footer-col-link">MediNexus Consult</a>
+                        <a href="#" class="footer-col-link">Health Feed</a>
+                        <a href="#" class="footer-col-link">Doctor Profile</a>
+                    </div>
+
+                    <!-- Col 4: For Hospitals -->
+                    <div class="footer-col">
+                        <p class="footer-col-title">For Hospitals</p>
+                        <a href="#" class="footer-col-link">Insta by MediNexus</a>
+                        <a href="#" class="footer-col-link">Hospital Profile</a>
+                        <a href="#" class="footer-col-link">MediNexus Reach</a>
+                        <a href="#" class="footer-col-link">MediNexus Drive</a>
+                        <p class="footer-col-title footer-col-title--sub">For Corporates</p>
+                        <a href="#" class="footer-col-link">Wellness Plans</a>
+                    </div>
+
+                    <!-- Col 5: More -->
+                    <div class="footer-col">
+                        <p class="footer-col-title">More</p>
+                        <a href="#" class="footer-col-link">Help</a>
+                        <a href="#" class="footer-col-link">Developers</a>
+                        <a href="#" class="footer-col-link">Privacy Policy</a>
+                        <a href="#" class="footer-col-link">Terms &amp; Conditions</a>
+                        <a href="#" class="footer-col-link">Healthcare Directory</a>
+                        <a href="#" class="footer-col-link">MediNexus Health Wiki</a>
+                    </div>
+
+                    <!-- Col 6: Contact -->
+                    <div class="footer-col footer-col--contact" id="contact">
+                        <p class="footer-col-title">Contact</p>
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-label">&#128222; Phone</span>
+                            <a href="tel:+918619216569" class="footer-col-link">+91 8619216569</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-label">&#9993; Email</span>
+                            <a href="mailto:help@medinexus.org" class="footer-col-link">help@medinexus.org</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-label">&#128205; Address</span>
+                            <span class="footer-col-link footer-address">Main Emergency Block,<br>MediNexus Life
+                                Care,<br>Jaipur, Rajasthan</span>
+                        </div>
+                    </div>
+
+                    <!-- Col 7: Social -->
+                    <div class="footer-col">
+                        <p class="footer-col-title">Social</p>
+                        <a href="#" class="footer-col-link">Facebook</a>
+                        <a href="#" class="footer-col-link">Twitter</a>
+                        <a href="#" class="footer-col-link">LinkedIn</a>
+                        <a href="#" class="footer-col-link">Youtube</a>
+                        <a href="#" class="footer-col-link">Github</a>
+                    </div>
+
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="footer-bottom">
+                    <div class="footer-logo">
+                        <span class="footer-logo-dot">&#8226;</span>
+                        <span class="footer-logo-name">medinexus</span>
+                        <span class="footer-logo-dot">&#8226;</span>
+                    </div>
+                    <p class="footer-copy">Copyright &copy; 2025, MediNexus Life Care. All rights reserved.</p>
+                </div>
+
             </div>
         </div>
     </div>
+</div>
     <script src="js/home.js" defer></script>
 </body>
 
